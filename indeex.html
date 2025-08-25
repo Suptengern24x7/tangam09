@@ -5,7 +5,7 @@
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Help Center</title>
+  <title> Help Center</title>
   <meta name="description" content="Help Center – answers, guides, security tips, and ways to contact support." />
   <meta name="theme-color" content="#111827" />
   <style>
@@ -78,12 +78,12 @@
   <img src="tn.png" alt="Company Logo" width="40" height="40">
   <span>Tangem</span>
 </a>
-      </a>
+  
       <div class="pill" role="status" aria-live="polite">
         
         <span style="color:var(--ok);font-weight:700">Help Center</span>
       </div>
-      <a class="cta" href="tel:+18889997777" aria-label="Call support">
+      <a class="cta" href="tel:+19999999999" aria-label="Call support">
         <span>Call Now</span>
       </a>
     </div>
@@ -98,11 +98,11 @@
           <div class="kpis">
             <div class="kpi">
               <div class="badge">Call us</div>
-              <div><a href="tel:+18889997777">+1 (888) 999-7777</a></div>
+              <div><a href="tel:+19999999999">+1 (999) 999-9999</a></div>
             </div>
             <div class="kpi">
               <div class="badge">Chat support</div>
-              <div><a href="#" onclick="alert('Chat support coming soon!')">Start chat</a></div>
+              <div><a href="#" onclick="LiveChatWidget.call('maximize');">Start chat</a></div>
             </div>
           </div>
         </div>
@@ -181,5 +181,15 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear()
   </script>
+  <!-- Start of LiveChat (www.livechat.com) code -->
+  <script>
+    window._lc = window._lc || {};
+    window.__lc.license = 19280076;
+    window.__lc.integration_name = "manual_channels";
+    window.__lc.product_name = "livechat";
+    ;(function(n,t,c){function i(n){return e.h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n._lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+  </script>
+  <noscript><a href="https://www.livechat.com/chat-with/19280076/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+  <!-- End of LiveChat code -->
 </body>
 </html>
